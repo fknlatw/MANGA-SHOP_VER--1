@@ -62,14 +62,14 @@ accordeonTitle.forEach(title => {
 
         if(currentText.classList.contains("hide")){
             currentTitle.classList.add("active");
-            currentText.classList.remove("hide")
             currentText.style.height = currentText.scrollHeight + "px";
+            currentText.classList.remove("hide");
+            
             
         } else {
             currentTitle.classList.remove("active");
-            currentText.classList.add("hide")
             currentText.style.height = `0`;
-            
+            currentText.classList.add("hide");
         }
         
         removeClass(currentTitle);
