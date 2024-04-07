@@ -1,0 +1,34 @@
+.footer_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem 1rem 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #373f47d0;
+}
+
+.footer_social{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: #fff;
+}
+.description_text{
+    color: #fff;
+    font-size: 1.25rem;
+}
+.footer_social a{
+    color: #fff;
+}
+
+@media screen and (max-width: 600px){
+    .footer_description{
+        grid-column: span 2;
+        margin-bottom: 1.25rem;
+    }
+    .footer_social{
+        grid-column: span 2;
+        margin-bottom: 1.25rem;
+    }
+}
